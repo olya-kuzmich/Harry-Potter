@@ -27,13 +27,23 @@ function push(ar) {
 }
 push(data);
 input.addEventListener("input", function () {
-  let arr = arrhouse.filter(
-    (el) =>
-      el.name.toLowerCase().includes(input.value.trim().toLowerCase()) ||
-      el.actor.toLowerCase().includes(input.value.trim().toLowerCase())
-  );
-  cards.innerHTML = "";
-  push(arr);
+  if (select.value == "no") {
+    let arr = data.filter(
+      (el) =>
+        el.name.toLowerCase().includes(input.value.trim().toLowerCase()) ||
+        el.actor.toLowerCase().includes(input.value.trim().toLowerCase())
+    );
+    cards.innerHTML = "";
+    push(arr);
+  } else {
+    let arr1 = arrhouse.filter(
+      (el) =>
+        el.name.toLowerCase().includes(input.value.trim().toLowerCase()) ||
+        el.actor.toLowerCase().includes(input.value.trim().toLowerCase())
+    );
+    cards.innerHTML = "";
+    push(arr1);
+  }
 });
 let arrhouse;
 select.addEventListener("change", function () {
