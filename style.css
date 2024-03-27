@@ -1,0 +1,151 @@
+* {
+  font-family: "Inter";
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background: #f5f5f5;
+}
+.container {
+  margin: 0 auto;
+  max-width: 768px;
+  width: 100%;
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
+.header__title {
+  padding-top: 64px;
+  padding-bottom: 48px;
+}
+h1 {
+  color: #000;
+  font-size: 64px;
+  font-weight: 700;
+  letter-spacing: -1.28px;
+}
+p {
+  color: #000;
+  font-size: 21px;
+  font-weight: 400;
+  line-height: 36px;
+}
+.inputs {
+  display: flex;
+  gap: 20px;
+  padding-bottom: 40px;
+}
+.inputs__one {
+  display: flex;
+  flex-direction: column;
+  width: 452px;
+}
+input {
+  height: 38px;
+  width: 100%;
+  border: solid #ced4da 1px;
+  border-radius: 4px;
+  color: #4a4a4b;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 28px;
+  padding-left: 20px;
+}
+label {
+  color: #818182;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 28px;
+}
+.select {
+  display: flex;
+  flex-direction: column;
+}
+select {
+  height: 38px;
+  width: 216px;
+  border: solid #ced4da 1px;
+  border-radius: 4px;
+  padding-left: 15px;
+  color: var(--Secondary-Light-Color, #abb5be);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 21px;
+}
+hr {
+  opacity: 20%;
+}
+.cards {
+  padding-top: 40px;
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+article {
+  max-width: 332px;
+  width: 100%;
+  max-height: 530px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  border: 1px solid #dee2e6;
+  background: #fff;
+  overflow: hidden;
+}
+.img {
+  background-image: url(https://masterpiecer-images.s3.yandex.net/74a49f087ed411ee9dbdf6c574779d3e:upscaled);
+  height: 313px;
+  background-position: center;
+}
+img {
+  width: 100%;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  height: 313px;
+  object-fit: cover;
+  object-position: top;
+}
+.cards__text {
+  padding: 24px;
+}
+.cards__text p {
+  color: var(--Heading-Title-Color, #152536);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 28px;
+}
+h2 {
+  color: var(--Heading-Title-Color, #152536);
+  font-size: 20px;
+  font-weight: 800;
+  margin-bottom: 4px;
+}
+@media (max-width: 688px) {
+  h1 {
+    text-align: center;
+    color: #000;
+    font-size: 52px;
+    font-weight: 700;
+  }
+  .header__title p {
+    text-align: center;
+    color: #000;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 28px;
+  }
+  select {
+    width: 320px;
+  }
+  input {
+    width: 320px;
+  }
+  .inputs {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  .inputs__one {
+    width: 320px;
+  }
+}
